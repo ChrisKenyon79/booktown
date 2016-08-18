@@ -1,0 +1,46 @@
+BOOKTOWN deliverable
+
+Chris Kenyon
+WDI-09
+
+Complete exercises with SQL
+
+1. all subjects sorted by subject
+SELECT * FROM subjects ORDERBY subject;
+
+2. all subjects sorted by location
+SELECT * FROM subjects ORDERBY location;
+
+3. find Little Women
+SELECT * FROM books WHERE title="little women";
+
+4. find all books with the word Python
+SELECT * FROM books WHERE (title="%python%" 
+    OR title="python%" OR title="python%")
+
+
+5. find all subjects with location of Main St, sort subject
+SELECT * FROM subjects WHERE location = 'main st' ORDERBY subject;
+
+6. all computer books, list only title
+SELECT * FROM books JOIN subject ON books.subject
+WHERE subject="computers";
+
+7. all books, title,name,subject
+
+
+8. Dune, show title, isbn, publisher, price
+
+
+9. shipments sorted by shipdate, 
+name, shipdate, title
+
+
+10. Count of all Books
+SELECT COUNT(*) FROM books;
+
+11. Count of all locations
+SELECT COUNT(*) FROM subjects GROUP BY location;
+
+12. 
+
